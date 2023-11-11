@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="../Home/import.css">
+        <title>Seaside Manegement | Home</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h1>Seaside<strong>Manegement</strong></h1>
+        </nav>
+
+        <main id="table-produtos">
+            <nav id="navbar-produtos">
+                <div>
+                    <input type="text" name="search" placeholder="Pesquisar" id="inputCadastro">
+                </div>
+                <div class="div-buttons">
+                    <a href="../Cadastro/cadastro.html"><button type="submit">Cadastrar Produto</button></a>
+                    <a href="../Vendas/vendas.html"><button type="submit" id="venderProduto">Vender Produto</button></a>
+                </div>
+            </nav>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col" id="idProduto">Id</th>
+                        <th scope="col" id="nomeProduto">Nome</th>
+                        <th scope="col" id="codigoProduto">Código de Barras</th>
+                        <th scope="col" id="datafProduto">Data Fabricação</th>
+                        <th scope="col" id="datavProduto">Data Vencimento</th>
+                        <th scope="col">Valor R$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Arroz</td>
+                        <td>2222</td>
+                        <td>03/11/2023</td>
+                        <td>09/11/2023</td>
+                        <td>12,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <main id="table-vendas">
+            <nav id="navbar-vendas">
+                <input type="text" name="search" placeholder="Pesquisar" id="inputVendas">
+            </nav>
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col" id="idProduto">Id</th>
+                        <th scope="col" id="nomeProduto">Nome</th>
+                        <th scope="col" id="dataVenda">Data Venda</th>
+                        <th scope="col" id="compradorProduto">Comprador</th>
+                        <th scope="col">Código de Barras</th>
+                        <th scope="col">Qta</th>
+                        <th scope="col">Total R$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Arroz</td>
+                        <td>22/11/2023</td>
+                        <td>SuperMercado jsl</td>
+                        <td>22222</td>
+                        <td>100</td>
+                        <td>1200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+
+    <script src="search.js"></script>
+    <script src="../Home/alertVencimento.js"></script>
+</html>
+
